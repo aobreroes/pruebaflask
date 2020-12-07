@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{%block title%}
+
+Inicio
+{{super()}}
+
+{%endblock%}
+
+{%block content%}
+
+    <h1>Pagina de inicio</h1>
+
+    {{dato}}
+    {{lista}}
+
+    {%for listado in lista%}
+            <p> {{loop.index}} {{listado}}</p>
+    {%endfor%}
+
+    <p>Tu edad es {{edad}}</p>
+
+    {% if edad >=18%}
+        <p>Eres mayor de edad</p>
+    {%else%}
+        <p>Eres menor de edad</p>
+    {%endif%}
+
+    <h1>Edad desde include</h1>
+
+    {%include 'includes/edad.html'%}
+
+    
+
+    {#comentario#}
+
+{%endblock%}
+ 

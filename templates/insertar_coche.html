@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{%block title%}{%if coche%}Editar coche {%else%} Insertar coche {%endif%}{%endblock%}
+
+{%block content%}
+
+{%if coche%}
+
+    <h1>Editar coche: {{coche.1}} {{coche.2}}</h1>
+
+    {%else%}
+
+    <h1>Insertar coche</h1>
+
+{%endif%}
+
+    <div id="contentform">
+
+        <form method='POST' action="">
+
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" {%if coche%} value="{{coche.1}}" {%endif%}>
+
+            <label for="modelo">Modelo</label>
+            <input type="text" name="modelo" {%if coche%} value="{{coche.2}}" {%endif%}>
+
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" {%if coche%} value="{{coche.3}}" {%endif%}>
+
+            <label for="localidad">Localidad</label>
+            <input type="text" name="localidad" {%if coche%} value="{{coche.4}}" {%endif%}>
+
+            <input type="submit" {%if coche%} value="Editar coche" {%else%} value="Insertar coche" {%endif%}>
+
+        </form>
+
+    </div>
+
+{%endblock%}

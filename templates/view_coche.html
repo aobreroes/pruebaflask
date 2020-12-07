@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{%block title%}Ver {{coche.1}} {{coche.2}}{%endblock%}
+{%block content%}
+
+    {%for datos in coche%}
+        <p>{{datos.1}}
+        {{datos.2}}
+        {{datos.3}}
+        {{datos.4}}</p>
+
+    {%endfor%}
+
+{%endblock%}
+ 

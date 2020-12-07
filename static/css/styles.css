@@ -1,0 +1,673 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: white;
+
+}
+
+.clearfix{
+
+    clear: both;
+
+}
+
+header{
+
+    width: 1422px;
+    height: 190px;
+    background-color: white;
+    margin: 0px auto;
+    margin-bottom: 10px;
+
+}
+
+#navsup{
+
+    width: 1422px;
+    height: 40px;
+    background-color: lightskyblue;
+    font-size: 13px;
+    
+
+}
+
+.izq{
+
+    margin-left: 120px;
+    list-style: none;
+    float: left;
+    
+
+}
+
+.der{
+
+    float: right;
+    margin-right: 125px;
+    list-style: none;
+    
+
+}
+
+.der img{
+
+    width: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+}
+
+.der a{
+
+    width: 10px;
+    padding: 0px;
+    margin: 0 auto;
+
+}
+
+#navsup li{
+
+    line-height: 40px;
+    float: left;
+
+}
+
+#navsup ul li a{
+
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+
+.izq a:hover{
+
+    background: rgb(114, 114, 114);
+    transition: all 500ms;
+
+}
+
+
+
+#logo{
+
+    
+    width: 36%;
+    height: 140px;
+    margin-left: 120px;
+    padding-top: 10px;
+
+}
+
+
+#logo img{
+
+    display: block;
+    float: left;
+    width: 90px;
+    margin-top: 20px;
+
+}
+
+#logo h1{
+
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #2c2c2c;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+
+}
+
+#logo h5{
+
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #2c2c2c;
+    float: left;
+    margin-left: 13px;
+
+}
+
+nav{
+
+    width: 1200px;
+    height: 40px;
+    margin: 0px auto;
+    background-color: lightskyblue;
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgb(121, 121, 121);
+
+}
+
+nav ul{
+
+    margin-left: 10px;
+    list-style: none;
+
+}
+
+nav li{
+
+    line-height: 40px;
+    float: left;
+
+}
+
+nav ul li a{
+
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+
+nav ul li a:hover{
+
+    background: rgb(114, 114, 114);
+    transition: all 500ms;
+
+}
+
+.navder{
+
+    float: right;
+    margin-right: 10px;
+
+}
+
+.navder p{
+
+    color:white;
+
+}
+
+
+#content{
+
+    width: 1422px;
+    min-height: 980px;
+    margin: 0px auto;
+    margin-top: 25px; 
+
+}
+
+#content input[type="text"]{
+
+    width: 138px;
+    height: 25px;
+
+}
+
+#content input[type="submit"]{
+
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: all 500ms;
+
+}
+
+#content input[type="submit"]:hover{
+
+    background: rgb(114, 114, 114);
+    transition: all 500ms;
+
+}
+
+#contentform{
+
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.alert{
+
+    color: white;
+    background-color: black;
+    width: 22%;
+    padding: 5px;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.alert_warning{
+
+    color: red;
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.errorlist{
+
+    color: red;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.alerterrors{
+
+    color: red;
+    font-size: 13px;
+    margin-top: 20px;
+
+}
+
+#contentform label{
+
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+#contentform input[type="text"],
+#contentform input[type="email"]{
+
+    width: 40%;
+    height: 25px;   
+    display: block;
+    
+}
+
+.helptext{
+
+    font-size: 11px;
+    font-style: italic;
+}
+
+#contentform input[type="password"]{
+
+    width: 25%;
+    height: 25px;
+    display: block;
+}
+
+#contentform ul{
+
+    margin-left: 30px;
+    font-size: 11px;
+    font-style: italic;
+
+}
+
+#contentform p{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    
+}
+
+#contentform input[type="submit"]{
+
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: all 500ms;
+
+}
+
+#contentform input[type="submit"]:hover{
+
+    background: rgb(114, 114, 114);
+    transition: all 500ms;
+
+}
+
+.pag_title{
+
+    width: 470px;
+    float: left;
+
+}
+
+.pagination{
+
+    width: 402px;
+    float: right;
+    color:black;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 6px;
+    text-align: right;
+    font-size: 13px;
+}
+
+
+.pagination a{
+
+    margin-top: 0px;
+    color:white;
+    background-color: black;
+    padding: 5px;
+    transition: all 500ms;
+    border-radius: 5px;
+
+}
+
+.pagination a:hover{
+
+    background: rgb(114, 114, 114);
+    transition: all 500ms;
+    
+}
+
+.actual{
+
+    color:black;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.box{
+
+    border: 1px solid lightgray;
+    background: white;
+    width: 886px;
+    margin-left: 120px;
+    min-height: 938px;
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 30px;
+
+}
+
+#contentpri{
+
+    text-align: left;
+
+}
+
+#contentpri h3{
+
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contentpri p{
+
+    margin-top: 10px;
+    font-size: 13px;
+
+}
+
+#contentpri img{
+
+    width: 180px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+
+.title{
+
+    margin-bottom: 10px;
+}
+
+.date{
+
+    color: gray;
+    margin-bottom: 10px;
+}
+
+#cuerpoart{
+
+    margin-top: 30px;
+
+}
+
+
+#cuerpoart h3{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+#cuerpoart h4{
+
+    margin-top: 10px;
+    font-size: 13px;
+
+}
+
+#cuerpoart table{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#cuerpoart p{
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
+
+}
+
+#cuerpoart img{
+
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    
+}
+
+#boxarticle{
+
+    width: 100%;
+    float: left;
+    margin-bottom: 19px;
+
+}
+
+.item_article{
+    
+    border-bottom: 1px solid rgb(194, 194, 194);
+    border-top: 1px solid rgb(194, 194, 194);
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+
+}
+
+.item_article a{
+
+    color: white; 
+    background-color: black;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    
+}
+
+.item_article .image{
+
+    
+    width: 290px;
+    height: 195px;
+    float: left;
+    overflow: hidden;
+    
+
+}
+
+.item_article .image img{
+
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.item_article .image a{
+
+    background-color: white;
+    padding: 0px;
+    
+}
+
+.item_article .cuerpo{
+
+
+    float: left;
+    width:65%;
+    height: 188px;
+    padding-left:10px;
+    padding-top: 5px;
+    font-size: 13px;
+
+}
+
+.item_article .principal{
+
+    float: left;
+    width: 100%;
+    height: 196px;
+    margin-top: 1px;
+
+}
+
+.item_article h2 a{
+
+    color: black;
+    background-color: white;
+}
+
+.item_article .date{
+
+    margin-top: 3px;
+    font-size:10px;
+    margin-left: 3px;
+
+}
+
+.item_article .contenido{
+
+    padding-bottom:10px;
+    padding-top: 0px;  
+    margin-left: 3px;  
+
+}
+
+.contenido a{
+
+    color: rgb(114, 114, 114);
+    background-color: white;
+
+}
+
+
+aside{
+
+    border-radius: 5px;
+    min-height: 978px;
+    margin-left: 30px;
+    background-color: white;
+    width: 222px;
+    height: 150px;
+    float: left;
+    margin-bottom: 30px;
+    
+}
+
+.lateral{
+
+    padding: 10px;
+    
+}
+
+.lateral ul{
+
+
+    list-style: none;
+}
+
+.busqueda{
+
+    margin-bottom: 10px;
+
+}
+
+.boxlateral{
+
+    margin-top:  20px;
+    
+}
+
+.boxlateral h2{
+
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.boxlateral h3{
+
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.boxlateral ul{
+
+    font-size: 13px;
+    margin-bottom: 20px;
+
+}
+
+.boxlateral a{
+
+    color: rgb(114, 114, 114);
+    font-style: unset;
+
+}
+
+
+footer{
+
+    font-size: 12px;
+    width: 1422px;
+    background-color: lightskyblue;
+    border: 1px solid #333333;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}

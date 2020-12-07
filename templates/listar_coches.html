@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{%block title%}Insertar coche{%endblock%}
+
+{%block content%}
+
+{%with messages = get_flashed_messages() %}
+
+        {%if messages %}
+
+            {%for message in messages%}
+                <div class="alert">
+                    {{message}}
+                </div>
+            {%endfor%}
+        
+        {%endif%}
+
+{% endwith %}
+
+<h1>Listar coches</h1>
+<br>
+
+
+    {%for coche in coches%}
+        <br>
+        <p><strong>{{coche.1}}
+        {{coche.2}}
+        {{coche.3}}
+        {{coche.4}}</strong></p>
+        <br>
+        <a href="{{url_for('viewcoche', coche_id=coche.0)}}">Ver coche</a>
+        <a href="{{url_for('editcoche', coche_id=coche.0)}}">| Editar</a>
+        <a href="{{url_for('borrarcoche', coche_id=coche.0)}}">| Borrar</a>
+        <hr>
+        <br>
+    {%endfor%}
+
+
+
+
+{%endblock%}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            
+            {% block title %} | Flask
+            {% endblock %}
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}"/>
+        <link rel="icon" type="image/png" href="" />
+    </head>
+    <body>
+        
+        <header>
+            <div id="navsup">
+                <ul class="izq">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+                <ul class="der">
+                    <li><a href="https://www.facebook.com/"><img src=""></a></li>
+                    <li><a href=""><img src=""></a></li>
+                </ul>
+            </div>
+            <div id="logo">     
+                
+                <a href=""><img src="{{url_for('static', filename='images/flask.png')}}"></a>
+                <a href=""><h1>Sitio Web con Flask</h1></a>
+                <a href=""><h5>by Antonio Obrero</h5></a>
+            </div>
+        </header>
+        <nav>
+            <div class="navizq">
+                <ul>
+                    <li><a href="{{url_for('index')}}">Inicio</a></li>
+                    <li><a href="{{url_for('sobremi')}}">Sobre mi</a></li>
+                    <li><a href="{{url_for('contacto')}}">Contacto</a></li>
+                    <li><a href="{{url_for('lenguajes')}}">Lenguajes</a></li>
+                    <li><a href="{{url_for('insertarcoche')}}">Insertar coche</a></li>
+                    <li><a href="{{url_for('listarcoches')}}">Listar coches</a></li>
+                </ul>
+            </div>
+            <div class="navder">    
+                <ul>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+        <div id="content">
+            <div class="box">
+                
+                {% block content %}
+                    
+                {% endblock %}
+
+            </div>
+            <aside>
+                <div class="lateral">
+                    <div class="busqueda">
+                        <input type="text">
+                        <input type="submit" value="Buscar">
+                    </div>
+                    <div class="boxlateral">
+                        <h2>Categorias</h2>
+                        <ul>
+                            
+                        </ul>
+                        <h2>Post recientes</h2>
+                        <ul>
+                            
+                        </ul>
+                        <h2>Post populares</h2>
+                        <ul>
+                            
+                        </ul>
+                        <h3>Comentarios recientes</h3>
+                        <ul>
+                            <li><em>"Comentario de prueba"</em>
+                            <li><em>"Comentario de prueba 2"</em>
+                            <li><em>"Comentario de prueba 3"</em>
+                        </ul>
+                        <h3>Colaboradores</h3>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        </section>
+        <div class="clearfix"></div>
+        <footer>
+            &copy; Creado por Antonio Obrero - {{now}}
+        </footer>
+    </body>
+</html>
